@@ -32,11 +32,7 @@ const data = {
 	add: ['styled-components', 'firebase']
 };
 
-const calcCash = own => {
-	const everyCash = [...own];
-	const total = everyCash.reduce((sum, item) => sum + item, 0);
-	return total;
-};
+const calcCash = own => own.reduce((sum, item) => sum + item, 0);
 
 const lesson = calcCash(data.cash);
 
